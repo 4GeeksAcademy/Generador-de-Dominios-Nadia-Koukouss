@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,23 +13,211 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">letDomain</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Prices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Explore
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="card mb-5">
+            <div class="card-body">
+              <i class="fa-regular fa-comment-dots"></i>
+              <h5 class="card-title">24/7 Support</h5>
+              <p class="card-text">
+                Need help? Contact our Customer Success team anytime.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card mb-5">
+            <div class="card-body">
+              <i class="fa-regular fa-circle-check"></i>
+              <h5 class="card-title">Trusted Domain Registrar</h5>
+              <p class="card-text">
+                Hostinger is ICANN-accredited and offers 300 domain extensions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card mb-5d">
+            <div class="card-body">
+              <i class="fa-solid fa-gears"></i>
+              <h5 class="card-title">Quick Setup, Easy Management</h5>
+              <p class="card-text">
+                Register your domain in just a few clicks. No technical skills
+                required.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1>Domain Name Generator FAQs</h1>
+          <div class="question-box p-3 mb-4">
+            <h4>What is a domain name generator?</h4>
+            <p>
+              A domain name generator is a tool that helps you find the perfect
+              domain name by generating ideas based on the keywords you enter.
+              The generator suggests available domain names instantly, saving
+              you time and effort in brainstorming and searching manually.
+            </p>
+          </div>
+          <div class="question-box p-3 mb-4">
+            <h4>How does the Instant Domain Search generator work?</h4>
+            <p>
+              Our Domain Name Generator works by quickly pulling available
+              domain names as soon as you type in a keyword. It uses powerful AI
+              to suggest various combinations of related words and domain
+              extensions, ensuring you have plenty of options for your domain
+              name. It's an efficient way to generate domain names without
+              having to search for them one by one.
+            </p>
+          </div>
+          <div class="question-box p-3 mb-4">
+            <h4>Why should I use a domain name generator?</h4>
+            <p>
+              A domain name generator can provide creative, unique, and
+              available domain names based on your keywords. It's especially
+              useful when your first choice is already taken or if you're having
+              trouble coming up with a memorable name. Our domain generator
+              helps you explore a range of ideas across multiple domain name
+              suggestions.
+            </p>
+          </div>
+          <div class="question-box p-3 mb-4">
+            <h4>
+              Domains for sale Can I trust the suggestions from the domain
+              generator?
+            </h4>
+            <p>
+              Yes, the suggestions are based on real-time data, so the domain
+              names are available for registration at the moment they are shown.
+              The domain generator also checks across various TLDs (top-level
+              domains) such as .com, .net, and others, so you can easily find a
+              domain extension that works for your website.
+            </p>
+          </div>
+          <div class="question-box p-3 mb-4">
+            <h4>
+              Can I use the domain name generator for brainstorming even if I
+              don't register right away?
+            </h4>
+            <p>
+              Can I use the domain name generator for brainstorming even if I
+              don't register right away? Absolutely! The domain generator is an
+              excellent tool for brainstorming and getting ideas for future
+              projects. You can explore different domain name ideas and save
+              your favorite suggestions to revisit when you're ready to register
+              a domain.
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="row">
+          <div class="col-3">hh</div>
+          <div class="col-3">
+            <h3>Product</h3>
+            <ul>
+              <li>Business Name Generator</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>Legal</h3>
+            <ul>
+              <li>Disclaimer</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>Links</h3>
+            <ul>
+              <li>Store Name Generator</li>
+              <li>Shop Name Generator</li>
+              <li>Brand Name Generator</li>
+              <li>Website Name Generator</li>
+              <li>Dropshipping Name Generator</li>
+              <li>T shirt Name Generator</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
   </body>
 </html>

@@ -1,5 +1,12 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+.container {
+  /* background-image: url(/src/assets/img/fondo\ extensiones.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: blanchedalmond;
+}
+.question-box {
+  border: 1px solid black;
+  border-radius: 15px;
 }
