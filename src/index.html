@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-
-    <!-- Fontawesome is our recomended library for icons -->
+    <title>Domain Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -26,9 +24,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- navbar section  -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">letDomain</a>
+        <a class="navbar-brand fs-2 fw-bold" href="#">letDomain</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,14 +43,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Prices</a>
+              <a class="nav-link fs-4" aria-current="page" href="#">Prices</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link fs-4" href="#">Services</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle fs-4"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -71,167 +71,326 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link fs-4" href="#">Contact</a>
             </li>
           </ul>
           <form class="d-flex">
             <input
-              class="form-control me-2"
+              class="form-control me-2 fs-5"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
+            <button class="btn btn-outline-primary" type="submit">
+              <span class="fs-5">Search</span>
             </button>
           </form>
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="card mb-5">
-            <div class="card-body">
-              <i class="fa-regular fa-comment-dots"></i>
-              <h5 class="card-title">24/7 Support</h5>
-              <p class="card-text">
-                Need help? Contact our Customer Success team anytime.
-              </p>
+
+    <!-- hero section -->
+
+    <section>
+      <div class="container">
+        <div class="row my-5 p-5">
+          <div class="col-12">
+            <h1 class="text-center fw-bold">Your Domain Name Generator</h1>
+            <h3 class="mt-5">
+              Generate domain name suggestions as you type. Our instant domain
+              generator tool will suggest available domain names for your
+              website.
+            </h3>
+            <div class="position-relative mb-3 mt-5">
+              <button
+                class="btn btn-outline-secondary position-absolute"
+                type="button"
+                style="border-radius: 20px"
+              >
+                Search
+              </button>
+              <input
+                type="text"
+                class="form-control shadow"
+                placeholder="Start typing here..."
+                style="height: 80px; border-radius: 20px"
+              />
+            </div>
+          </div>
+
+          <div class="row my-5">
+            <div class="col-12">
+              <div
+                class="form-control shadow"
+                style="height: 80px; border-radius: 20px"
+              >
+                <p>el nombre de dominio</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card mb-5">
-            <div class="card-body">
-              <i class="fa-regular fa-circle-check"></i>
-              <h5 class="card-title">Trusted Domain Registrar</h5>
-              <p class="card-text">
-                Hostinger is ICANN-accredited and offers 300 domain extensions.
-              </p>
+      </div>
+    </section>
+
+    <!-- Features section -->
+    <section class="my-5">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-4">
+            <div class="card border-0">
+              <div class="card-body fs-4">
+                <i class="fa-regular fa-comment-dots mb-4"></i>
+                <h5 class="card-title fw-bold">24/7 Support</h5>
+                <p class="card-text">
+                  Need help? Contact our Customer Success team anytime.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card border-0">
+              <div class="card-body fs-4">
+                <i class="fa-regular fa-circle-check mb-4"></i>
+                <h5 class="card-title fw-bold">Trusted Domain Registrar</h5>
+                <p class="card-text">
+                  Hostinger is ICANN-accredited and offers 300 domain
+                  extensions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card border-0">
+              <div class="card-body fs-4">
+                <i class="fa-solid fa-gears mb-4"></i>
+                <h5 class="card-title fw-bold">Quick Setup, Easy Management</h5>
+                <p class="card-text">
+                  Register your domain in just a few clicks. No technical skills
+                  required.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card mb-5d">
-            <div class="card-body">
-              <i class="fa-solid fa-gears"></i>
-              <h5 class="card-title">Quick Setup, Easy Management</h5>
-              <p class="card-text">
-                Register your domain in just a few clicks. No technical skills
-                required.
-              </p>
+      </div>
+    </section>
+
+    <section class="my-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-6 pe-0">
+            <img class="img-fluid" src="/src/assets/img/banner.jpg" />
+          </div>
+          <div class="col-6 ps-0 d-flex flex-column justify-content-center">
+            <div class="p-5">
+              <div>
+                <h3>Find the perfect domain in seconds<br /></h3>
+              </div>
+              <div>
+                <p class="fs-4">
+                  Stop wasting hours brainstorming names. Our smart domain
+                  generator helps you discover unique, available domain names
+                  instantly — no tech skills required.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <h1>Domain Name Generator FAQs</h1>
-          <div class="question-box p-3 mb-4">
-            <h4>What is a domain name generator?</h4>
-            <p>
-              A domain name generator is a tool that helps you find the perfect
-              domain name by generating ideas based on the keywords you enter.
-              The generator suggests available domain names instantly, saving
-              you time and effort in brainstorming and searching manually.
-            </p>
+
+        <div class="row">
+          <div class="col-6 pe-0 d-flex flex-column justify-content-center">
+            <div class="p-5">
+              <div>
+                <h3>AI-powered domain name ideas<br /></h3>
+              </div>
+              <div>
+                <p class="fs-4">
+                  Generate creative, brand-ready domain names using powerful
+                  algorithms designed to spark inspiration and get your next big
+                  idea online fast.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="question-box p-3 mb-4">
-            <h4>How does the Instant Domain Search generator work?</h4>
-            <p>
-              Our Domain Name Generator works by quickly pulling available
-              domain names as soon as you type in a keyword. It uses powerful AI
-              to suggest various combinations of related words and domain
-              extensions, ensuring you have plenty of options for your domain
-              name. It's an efficient way to generate domain names without
-              having to search for them one by one.
-            </p>
+
+          <div class="col-6 ps-0">
+            <img class="img-fluid" src="/src/assets/img/server.jpg" />
           </div>
-          <div class="question-box p-3 mb-4">
-            <h4>Why should I use a domain name generator?</h4>
-            <p>
-              A domain name generator can provide creative, unique, and
-              available domain names based on your keywords. It's especially
-              useful when your first choice is already taken or if you're having
-              trouble coming up with a memorable name. Our domain generator
-              helps you explore a range of ideas across multiple domain name
-              suggestions.
-            </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs section -->
+    <section class="m-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12">
+            <div>
+              <h2>Domain Name Generator FAQs</h2>
+              <div class="question-box p-3 my-4">
+                <h4>What is a domain name generator?</h4>
+                <p class="fs-5">
+                  A domain name generator is a tool that helps you find the
+                  perfect domain name by generating ideas based on the keywords
+                  you enter. The generator suggests available domain names
+                  instantly, saving you time and effort in brainstorming and
+                  searching manually.
+                </p>
+              </div>
+              <div class="question-box p-3 mb-4">
+                <h4>How does the Instant Domain Search generator work?</h4>
+                <p class="fs-5">
+                  Our Domain Name Generator works by quickly pulling available
+                  domain names as soon as you type in a keyword. It uses
+                  powerful AI to suggest various combinations of related words
+                  and domain extensions, ensuring you have plenty of options for
+                  your domain name. It's an efficient way to generate domain
+                  names without having to search for them one by one.
+                </p>
+              </div>
+              <div class="question-box p-3 mb-4">
+                <h4>Why should I use a domain name generator?</h4>
+                <p class="fs-5">
+                  A domain name generator can provide creative, unique, and
+                  available domain names based on your keywords. It's especially
+                  useful when your first choice is already taken or if you're
+                  having trouble coming up with a memorable name. Our domain
+                  generator helps you explore a range of ideas across multiple
+                  domain name suggestions.
+                </p>
+              </div>
+              <div class="question-box p-3 mb-4">
+                <h4>
+                  Domains for sale Can I trust the suggestions from the domain
+                  generator?
+                </h4>
+                <p class="fs-5">
+                  Yes, the suggestions are based on real-time data, so the
+                  domain names are available for registration at the moment they
+                  are shown. The domain generator also checks across various
+                  TLDs (top-level domains) such as .com, .net, and others, so
+                  you can easily find a domain extension that works for your
+                  website.
+                </p>
+              </div>
+              <div class="question-box p-3 mb-4">
+                <h4>
+                  Can I use the domain name generator for brainstorming even if
+                  I don't register right away?
+                </h4>
+                <p class="fs-5">
+                  Can I use the domain name generator for brainstorming even if
+                  I don't register right away? Absolutely! The domain generator
+                  is an excellent tool for brainstorming and getting ideas for
+                  future projects. You can explore different domain name ideas
+                  and save your favorite suggestions to revisit when you're
+                  ready to register a domain.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="question-box p-3 mb-4">
-            <h4>
-              Domains for sale Can I trust the suggestions from the domain
-              generator?
-            </h4>
-            <p>
-              Yes, the suggestions are based on real-time data, so the domain
-              names are available for registration at the moment they are shown.
-              The domain generator also checks across various TLDs (top-level
-              domains) such as .com, .net, and others, so you can easily find a
-              domain extension that works for your website.
-            </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+
+    <footer class="mt-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-3">
+            <span class="fs-2 fw-bold">letDomain</span>
           </div>
-          <div class="question-box p-3 mb-4">
-            <h4>
-              Can I use the domain name generator for brainstorming even if I
-              don't register right away?
-            </h4>
+          <div class="col-3 fs-5">
+            <h4>Product</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Business Name Generator</a
+                >
+              </li>
+              <li><a class="text-decoration-none" href="#">About</a></li>
+              <li><a class="text-decoration-none" href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-3 fs-5">
+            <h4>Legal</h4>
+            <ul class="list-unstyled">
+              <li><a class="text-decoration-none" href="#">Disclaimer</a></li>
+            </ul>
+          </div>
+          <div class="col-3 fs-5">
+            <h4>Links</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Store Name Generator</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#">Shop Name Generator</a>
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Brand Name Generator</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >Website Name Generator</a
+                >
+              </li>
+              <li class="text-decoration-none">
+                <a class="text-decoration-none" href="#"
+                  >Dropshipping Name Generator</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >T shirt Name Generator</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex">
+              <img class="payment-img" src="../src/assets/payments/visa.png" />
+              <img
+                class="payment-img"
+                src="../src/assets/payments/mastercard.png"
+              />
+              <img
+                class="payment-img"
+                src="../src/assets/payments/paypal.png"
+              />
+              <img
+                class="payment-img"
+                src="../src/assets/payments/discover.png"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="media-section d-flex justify-content-start">
+              <i class="fa-brands fa-facebook mt-3 me-2 fs-3"></i>
+              <i class="fa-brands fa-instagram mt-3 me-2 fs-3"></i>
+              <i class="fa-brands fa-youtube mt-3 me-2 fs-3"></i>
+              <i class="fa-brands fa-x-twitter mt-3 me-2 fs-3"></i>
+              <i class="fa-brands fa-linkedin mt-3 me-2 fs-3"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center fs-5">
+            <hr />
             <p>
-              Can I use the domain name generator for brainstorming even if I
-              don't register right away? Absolutely! The domain generator is an
-              excellent tool for brainstorming and getting ideas for future
-              projects. You can explore different domain name ideas and save
-              your favorite suggestions to revisit when you're ready to register
-              a domain.
+              Copyright <i class="fa-regular fa-copyright"></i> letDomain 2025
             </p>
           </div>
         </div>
       </div>
-      <footer>
-        <div class="row">
-          <div class="col-3">letDomain</div>
-          <div class="col-3">
-            <h3>Product</h3>
-            <ul>
-              <li>Business Name Generator</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <h3>Legal</h3>
-            <ul>
-              <li>Disclaimer</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <h3>Links</h3>
-            <ul>
-              <li>Store Name Generator</li>
-              <li>Shop Name Generator</li>
-              <li>Brand Name Generator</li>
-              <li>Website Name Generator</li>
-              <li>Dropshipping Name Generator</li>
-              <li>T shirt Name Generator</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <img src="../src/assets/payments/visa.png" />
-            <img src="../src/assets/payments/mastercard.png" />
-            <img src="../src/assets/payments/paypal.png" />
-            <img src="../src/assets/payments/discover.png" />
-          </div>
-          <div class="col-6">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
-        </div>
-      </footer>
-    </div>
+    </footer>
 
     <script type="module" src="/app.js"></script>
   </body>

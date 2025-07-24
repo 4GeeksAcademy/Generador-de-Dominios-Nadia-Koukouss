@@ -1,12 +1,33 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-
-.container {
-  /* background-image: url(/src/assets/img/fondo\ extensiones.jpg); */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-image: url(../src/assets/img/fondo-de-cuadricula-digital-abstracto-negro.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: blanchedalmond;
+  background-position: center;
+}
+
+h1 {
+  color: #66cdf2;
 }
 .question-box {
-  border: 1px solid black;
   border-radius: 15px;
+  background: #88dbb3;
+  background: radial-gradient(
+    circle,
+    rgba(136, 219, 179, 1) 0%,
+    rgba(216, 226, 237, 1) 100%
+  );
+}
+.payment-img {
+  width: 100px;
+  height: 70px;
+}
+.media-section {
+  cursor: pointer;
+}
+footer ul li a {
+  color: black;
 }
