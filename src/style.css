@@ -1,18 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 body {
   /* background-image: url(../src/assets/img/fondo-de-cuadricula-digital-abstracto-negro.jpg); */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 
 h1 {
   color: #66cdf2;
 }
-.question-box {
+
+.question-box,
+.extensions {
   border-radius: 15px;
   background: #88dbb3;
   background: radial-gradient(

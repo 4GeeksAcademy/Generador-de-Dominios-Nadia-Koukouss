@@ -43,14 +43,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link fs-4" aria-current="page" href="#">Prices</a>
+              <a class="nav-link fs-5" aria-current="page" href="#">Prices</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4" href="#">Services</a>
+              <a class="nav-link fs-5" href="#">Services</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle fs-4"
+                class="nav-link dropdown-toggle fs-5"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -71,7 +71,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4" href="#">Contact</a>
+              <a class="nav-link fs-5" href="#">Contact</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -81,7 +81,7 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-primary" type="submit">
+            <button class="btn btn-outline-info" type="submit">
               <span class="fs-5">Search</span>
             </button>
           </form>
@@ -103,28 +103,127 @@
             </h3>
             <div class="position-relative mb-3 mt-5">
               <button
-                class="btn btn-outline-secondary position-absolute"
+                class="btn btn-outline-info position-absolute"
                 type="button"
-                style="border-radius: 20px"
+                style="
+                  border-radius: 20px;
+                  top: 20px;
+                  right: 10px;
+                  height: 60px;
+                  width: 120px;
+                "
               >
-                Search
+                <span class="fw-bold fs-5">Search</span>
               </button>
               <input
                 type="text"
-                class="form-control shadow"
+                class="form-control shadow fs-3"
                 placeholder="Start typing here..."
-                style="height: 80px; border-radius: 20px"
+                style="height: 100px; border-radius: 20px"
               />
             </div>
           </div>
 
-          <div class="row my-5">
-            <div class="col-12">
+          <div class="row gx-2 mt-5">
+            <div class="col-2 d-flex justify-content-center align-items-center">
               <div
-                class="form-control shadow"
-                style="height: 80px; border-radius: 20px"
+                class="card extensions border-0 text-center"
+                style="width: 150px; height: 150px"
               >
-                <p>el nombre de dominio</p>
+                <div class="card-body">
+                  <p class="fs-4 fw-bold">.net</p>
+                  <p class="fs-5 text-decoration-line-through">2,99$</p>
+                  <p class="fs-4 fw-bold">1,99$</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-2 d-flex justify-content-center align-items-center">
+              <div
+                class="card extensions border-0 text-center p-2"
+                style="width: 150px; height: 150px"
+              >
+                <div class="card-body">
+                  <p class="fs-4 fw-bold">.com</p>
+                  <p class="fs-5 text-decoration-line-through">5,99$</p>
+                  <p class="fs-4 fw-bold">3,99$</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-2 d-flex justify-content-center align-items-center">
+              <div
+                class="card extensions border-0 text-center"
+                style="width: 150px; height: 150px"
+              >
+                <div class="card-body">
+                  <p class="fs-4 fw-bold">.org</p>
+                  <p class="fs-5 text-decoration-line-through">3,99$</p>
+                  <p class="fs-4 fw-bold">2,99$</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-2 d-flex justify-content-center align-items-center">
+              <div
+                class="card extensions border-0 text-center"
+                style="width: 150px; height: 150px"
+              >
+                <div class="card-body">
+                  <p class="fs-4 fw-bold">.es</p>
+                  <p class="fs-5 text-decoration-line-through">7,99$</p>
+                  <p class="fs-4 fw-bold">6,99$</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-2 d-flex justify-content-center align-items-center">
+              <div
+                class="card extensions border-0 text-center"
+                style="width: 150px; height: 150px"
+              >
+                <div class="card-body">
+                  <p class="fs-4 fw-bold">.io</p>
+                  <p class="fs-5 text-decoration-line-through">4,99$</p>
+                  <p class="fs-4 fw-bold">3,99$</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-2 d-flex justify-content-center align-items-center">
+              <div
+                class="card extensions border-0 text center"
+                style="width: 150px; height: 150px"
+              >
+                <div class="card-body">
+                  <p class="fs-4 fw-bold">.pro</p>
+                  <p class="fs-5 text-decoration-line-through">1,99$</p>
+                  <p class="fs-4 fw-bold">0,99$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row my-5">
+            <div class="col-12 position-relative">
+              <button
+                class="btn btn-outline-info position-absolute disabled"
+                type="button"
+                style="
+                  border-radius: 20px;
+                  top: 20px;
+                  left: 25px;
+                  height: 60px;
+                  width: 150px;
+                "
+              >
+                <span class="fw-bold fs-5">letDomain =</span>
+              </button>
+              <div
+                class="form-control d-flex justify-content-center align-items-center shadow"
+                style="height: 100px; border-radius: 20px; padding-left: 130px"
+              >
+                <span class="fs-2 fw-bold">el nombre de dominio</span>
               </div>
             </div>
           </div>
