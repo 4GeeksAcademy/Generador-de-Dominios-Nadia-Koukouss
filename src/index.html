@@ -7,9 +7,7 @@
     <title>Domain Generator</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -93,54 +91,48 @@
 
     <section>
       <div class="container">
-        <div class="row my-5 p-5">
+        <div class="row my-2 p-5">
           <div class="col-12">
             <h1 class="text-center fw-bold">Your Domain Name Generator</h1>
             <h3 class="mt-5">
-              Generate domain name suggestions as you type. Our instant domain
+              You only have to select an extension & our instant domain
               generator tool will suggest available domain names for your
               website.
             </h3>
-            <div class="position-relative mb-3 mt-5">
+            <div class="d-flex justify-content-center mb-3 mt-5">
               <button
-                class="btn btn-outline-info position-absolute"
+                class="btn btn-outline-info"
+                id="search-domain"
                 type="button"
-                style="
-                  border-radius: 20px;
-                  top: 20px;
-                  right: 10px;
-                  height: 60px;
-                  width: 120px;
-                "
+                style="border-radius: 20px; height: 60px; width: 200px"
               >
                 <span class="fw-bold fs-5">Search</span>
               </button>
-              <input
-                type="text"
-                class="form-control shadow fs-3"
-                placeholder="Start typing here..."
-                style="height: 100px; border-radius: 20px"
-              />
             </div>
           </div>
 
           <div class="row gx-2 mt-5">
+            <p id="alert" class="alert-danger fs-5"></p>
             <div class="col-2 d-flex justify-content-center align-items-center">
-              <div
-                class="card extensions border-0 text-center"
-                style="width: 150px; height: 150px"
-              >
-                <div class="card-body">
-                  <p class="fs-4 fw-bold">.net</p>
-                  <p class="fs-5 text-decoration-line-through">2,99$</p>
-                  <p class="fs-4 fw-bold">1,99$</p>
+              <div>
+                <div
+                  class="card extensions border-0 text-center"
+                  data-value=".net"
+                  style="width: 150px; height: 150px"
+                >
+                  <div class="card-body">
+                    <p class="fs-4 fw-bold">.net</p>
+                    <p class="fs-5 text-decoration-line-through">2,99$</p>
+                    <p class="fs-4 fw-bold">1,99$</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="col-2 d-flex justify-content-center align-items-center">
               <div
-                class="card extensions border-0 text-center p-2"
+                class="card extensions border-0 text-center"
+                data-value=".com"
                 style="width: 150px; height: 150px"
               >
                 <div class="card-body">
@@ -154,6 +146,7 @@
             <div class="col-2 d-flex justify-content-center align-items-center">
               <div
                 class="card extensions border-0 text-center"
+                data-value=".org"
                 style="width: 150px; height: 150px"
               >
                 <div class="card-body">
@@ -167,6 +160,7 @@
             <div class="col-2 d-flex justify-content-center align-items-center">
               <div
                 class="card extensions border-0 text-center"
+                data-value=".es"
                 style="width: 150px; height: 150px"
               >
                 <div class="card-body">
@@ -180,6 +174,7 @@
             <div class="col-2 d-flex justify-content-center align-items-center">
               <div
                 class="card extensions border-0 text-center"
+                data-value=".io"
                 style="width: 150px; height: 150px"
               >
                 <div class="card-body">
@@ -193,6 +188,7 @@
             <div class="col-2 d-flex justify-content-center align-items-center">
               <div
                 class="card extensions border-0 text center"
+                data-value=".pro"
                 style="width: 150px; height: 150px"
               >
                 <div class="card-body">
@@ -223,7 +219,7 @@
                 class="form-control d-flex justify-content-center align-items-center shadow"
                 style="height: 100px; border-radius: 20px; padding-left: 130px"
               >
-                <span class="fs-2 fw-bold">el nombre de dominio</span>
+                <p class="fs-2 fw-bold" id="domain-wrapper"></p>
               </div>
             </div>
           </div>
@@ -232,7 +228,7 @@
     </section>
 
     <!-- Features section -->
-    <section class="my-5">
+    <section class="my-3">
       <div class="container py-5">
         <div class="row py-5">
           <div class="col-4">
@@ -274,7 +270,7 @@
       </div>
     </section>
 
-    <section class="my-5">
+    <section class="my-3">
       <div class="container py-5">
         <div class="row">
           <div class="col-6 pe-0">
@@ -491,6 +487,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/app.js"></script>
+    <script src="/src/app.js"></script>
   </body>
 </html>
